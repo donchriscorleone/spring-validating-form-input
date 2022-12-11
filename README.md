@@ -28,7 +28,7 @@ Build the project
 
 Start the project
 ```bash
-  java -jar target/demo-0.0.1-SNAPSHOT.jar
+  java -jar target/*.jar
 ```
 
 1. Open a browser then go to localhost:8080
