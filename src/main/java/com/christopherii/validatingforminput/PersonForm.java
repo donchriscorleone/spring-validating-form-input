@@ -1,16 +1,17 @@
 package com.christopherii.validatingforminput;
 
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public class PersonForm {
 
     @NotNull
-    @Size(min = 0, max = 30)
+    @Size(min = 2, max = 30)
     private String name;
 
     @NotNull
-    @Size(min = 18)
+    @Min(18)
     private Integer age;
 
     public String getName() {
